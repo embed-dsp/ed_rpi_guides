@@ -15,8 +15,8 @@ There are two version of the Raspbian image:
 * Raspbian Desktop
     * `2018-04-18-raspbian-stretch.zip`
 
-The **Lite** image is used to run the Raspberry Pi in *Headless Mode* without 
-desktop environment i.e. no screen, keyboard and mouse.
+The **Lite** image is used to run the Raspberry Pi in *Headless Mode*, i.e. 
+without using a physical Keybord, Mouse and Monitor.
 The **Desktop** image is used to run the Raspberry Pi with full desktop environment.
 
 
