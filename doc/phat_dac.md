@@ -1,8 +1,8 @@
 
-# Pimoroni pHAt DAC
+# Pimoroni pHAT DAC
 
 This document describes how to install the 
-[Pimoroni pHAt DAC](https://shop.pimoroni.com/products/phat-dac) board on Raspberry Pi.
+[Pimoroni pHAT DAC](https://shop.pimoroni.com/products/phat-dac) board on Raspberry Pi.
 
 
 # Install
