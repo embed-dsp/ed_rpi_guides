@@ -167,6 +167,49 @@ The timezone settings are stored in the files:
 ```
 
 
+# Enable Hardware Interfaces
+
+The following hardware interfaces can be accessed from *User Space* 
+after they have been enabled.
+
+## SPI
+
+Enable SPI interface:
+* `/dev/spidev0.0`
+* `/dev/spidev0.1`
+
+```bash
+sudo raspi-config
+```
+* Select: **5 Interfacing Options**
+    * Select: **P4 SPI**
+
+## I2C
+
+Enable I2C interface:
+* `/dev/i2c-1`
+
+```bash
+sudo raspi-config
+```
+* Select: **5 Interfacing Options**
+    * Select: **P5 I2C**
+
+## UART
+
+Enable UART interface:
+* `/dev/ttyS0`
+* `/dev/serial0 -> /dev/ttyS0`
+
+```bash
+sudo raspi-config
+```
+* Select: **5 Interfacing Options**
+    * Select: **P6 Serial**
+        * Select: **No login shell**
+        * Select: **Enable serial port hardware**
+
+
 # Update Packages
 
 Type the following commands to update all of the packages to the latest versions:
