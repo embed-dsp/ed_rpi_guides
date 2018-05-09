@@ -17,7 +17,7 @@ abi    | Application-Binary-Interface (ABI) convention: `eabi`, `eabihf`, `gnuea
 
 Application-Binary-Interface (ABI) conventions:
 
-Name      | Tagret Operating System                                      | Default Floating Point Options
+Name      | Target Operating System                                      | Default Floating Point Options
 ----------|--------------------------------------------------------------|-------------------------------------------
 gnueabi   | Linux (using [glibc](https://www.gnu.org/software/libc))     | `-mfloat-abi=soft` or `-mfloat-abi=softfp`
 gnueabihf | Linux (using [glibc](https://www.gnu.org/software/libc))     | `-mfloat-abi=hard`
@@ -67,7 +67,7 @@ git clone https://github.com/raspberrypi/tools.git
 
 FIXME: Elaborate ... [Downloads](https://www.linaro.org/downloads)
 
-## Tagret Operating System: Linux (Using [glibc](https://www.gnu.org/software/libc))
+## Target Operating System: Linux (Using [glibc](https://www.gnu.org/software/libc))
 
 Toolchain                                              | Host             | Default Target Options
 -------------------------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf    | Linux x86 64-bit | `-ml
 gcc-linaro-7.2.1-2017.11-x86_64_armv8l-linux-gnueabihf | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (32-bit), `-mtune=[default]`, `-mthumb`, `-mfloat-abi=hard`, `-mfpu=neon-fp-armv8`
 gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu      | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (64-bit), ...
 
-## Tagret Operating System: Bare Metal (Using [newlib](https://sourceware.org/newlib) ?)
+## Target Operating System: Bare Metal (Using [newlib](https://sourceware.org/newlib) ?)
 
 Toolchain                                   | Host             | Default Target Options
 --------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------
