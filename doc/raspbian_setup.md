@@ -167,6 +167,87 @@ The timezone settings are stored in the files:
 ```
 
 
+# apt Command Guide
+Here is a summary of some usefull `apt` commands.
+```bash
+# List all available packages.
+sudo apt-cache pkgnames
+
+# Search for a specific package.
+sudo apt-cache search <package-name>
+
+# Get information about a specific package.
+sudo apt-cache show <package-name>
+
+# Get information about a dependencies of a specific package.
+sudo apt-cache showpkg <package-name>
+
+# Resynchronize the package index files.
+sudo apt-get update
+
+# Install the newest versions of all packages.
+sudo apt-get upgrade
+
+# Install specific package.
+sudo apt-get install <package-name>
+```
+
+
+# Install extra Packages
+
+Install some extra packages that are useful while working on the Raspberry Pi:
+```bash
+# Version control.
+sudo apt-get install git
+```
+
+```bash
+# File system utilities.
+sudo apt-get install tree
+sudo apt-get install dos2unix
+```
+
+```bash
+# Text editors.
+sudo apt-get install vim
+sudo apt-get install emacs
+```
+
+```bash
+# Audio utilities.
+sudo apt-get install sox
+sudo apt-get install flac
+sudo apt-get install madplay
+```
+
+# Enable Syntax Highlighting for VIM
+
+Edit the `.vimrc` file:
+```bash
+vim /home/pi/.vimrc
+```
+
+and type following:
+```bash
+syntax on
+```
+
+
+# Enable more Bash aliases
+
+Edit the `.bashrc` file:
+```bash
+vim /home/pi/.bashrc
+
+```
+
+and enable the following aliases (around line 90 in the `.bashrc` file)
+```bash
+alias ll='ls -l'
+alias la='ls -A'
+```
+
+
 # Enable Hardware Interfaces
 
 The following hardware interfaces can be accessed from *User Space* 
@@ -208,54 +289,3 @@ sudo raspi-config
     * Select: **P6 Serial**
         * Select: **No login shell**
         * Select: **Enable serial port hardware**
-
-
-# Update Packages
-
-Type the following commands to update all of the packages to the latest versions:
-```bash
-# Resynchronize the package index files
-sudo apt-get update
-
-# Install the newest versions of all packages
-sudo apt-get upgrade
-```
-
-
-# Install extra Packages
-
-Install some extra packages that are useful while working on the Raspberry Pi:
-```bash
-sudo apt-get install git
-sudo apt-get install tree
-sudo apt-get install vim
-sudo apt-get install emacs
-sudo apt-get install sox
-```
-
-# Enable Syntax Highlighting for VIM
-
-Edit the `.vimrc` file:
-```bash
-vim /home/pi/.vimrc
-```
-
-and type following:
-```bash
-syntax on
-```
-
-
-# Enable more Bash aliases
-
-Edit the `.bashrc` file:
-```bash
-vim /home/pi/.bashrc
-
-```
-
-and enable the following aliases (around line 90 in the `.bashrc` file)
-```bash
-alias ll='ls -l'
-alias la='ls -A'
-```

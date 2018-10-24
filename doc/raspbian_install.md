@@ -11,9 +11,9 @@ The Raspbian image can be downloaded from here: [Raspbian Download](https://www.
 
 There are two version of the Raspbian image:
 * Raspbian Lite
-    * `2018-04-18-raspbian-stretch-lite.zip`
+    * `2018-10-09-raspbian-stretch-lite.zip`
 * Raspbian Desktop
-    * `2018-04-18-raspbian-stretch.zip`
+    * `2018-10-09-raspbian-stretch.zip`
 
 The **Lite** image is used to run the Raspberry Pi in *Headless Mode*, i.e. 
 without using a physical Keybord, Mouse and Monitor.
@@ -29,9 +29,9 @@ The **Desktop** image is used to run the Raspberry Pi with full desktop environm
 * Check mount point using the `dmesg` command
     * **NOTE:** We will here assume: `/dev/sdh`
 * Unzip the *.zip image file to an *img file
-    * `unzip 2018-04-18-raspbian-stretch-lite.zip`
-* Write the *img file to the SD card
-    * `sudo dd status=progress bs=4M conv=fsync of=/dev/sdh if=2018-04-18-raspbian-stretch-lite.img`
+    * `unzip 2018-10-09-raspbian-stretch-lite.zip`
+* Write the *img file to the SD card **FIXME**: something goes wrong here, look at `dmesg`
+    * `sudo dd status=progress bs=4M conv=fsync of=/dev/sdh if=2018-10-09-raspbian-stretch-lite.img`
 * Unmount SD card partitions
     * `sudo umount /dev/sdh1`
     * `sudo umount /dev/sdh2`
@@ -41,7 +41,7 @@ The **Desktop** image is used to run the Raspberry Pi with full desktop environm
     * `sudo dnf install mediawriter`
 * Insert SD card in the card reader
 * Unzip the *.zip image file to an *img file
-    * `unzip 2018-04-18-raspbian-stretch-lite.zip`
+    * `unzip 2018-10-09-raspbian-stretch-lite.zip`
 * Write the *img file to the SD card
     * Start `Fedora Media Writer`
     * Select: `Custom Image`
@@ -55,7 +55,7 @@ The **Desktop** image is used to run the Raspberry Pi with full desktop environm
 * Install [Etcher](https://etcher.io)
 * Insert SD card in the card reader
 * Unzip the *.zip image file to an *img file
-    * `unzip 2018-04-18-raspbian-stretch-lite.zip`
+    * `unzip 2018-10-09-raspbian-stretch-lite.zip`
 * Write the *img file to the SD card
     * Start `Etcher`
     * Press: `Select image`
