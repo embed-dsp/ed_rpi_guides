@@ -220,16 +220,15 @@ sudo apt-get install flac
 sudo apt-get install madplay
 ```
 
-# Enable Syntax Highlighting for VIM
-
-Edit the `.vimrc` file:
 ```bash
-vim /home/pi/.vimrc
+# Samba client.
+sudo apt-get install smbclient
+sudo apt-get install cifs-utils
 ```
 
-and type following:
 ```bash
-syntax on
+# Build tools.
+sudo apt-get install scons
 ```
 
 
@@ -245,6 +244,37 @@ and enable the following aliases (around line 90 in the `.bashrc` file)
 ```bash
 alias ll='ls -l'
 alias la='ls -A'
+```
+
+
+# Enable Syntax Highlighting for VIM
+
+Edit the `.vimrc` file:
+```bash
+vim /home/pi/.vimrc
+```
+
+and type following:
+```bash
+syntax on
+```
+
+
+# Using Samba Shares
+
+Mount samba share.
+```bash
+# Create directory for mounting samba share.
+sudo mkdir /mnt/samba
+
+# Mount.
+sudo mount -t cifs //192.168.0.100/music /mnt/samba -o user=<samba-user>,pass=<samba-password>
+```
+
+Unmount samba share.
+```bash
+# Unmount.
+sudo umount /mnt/samba
 ```
 
 
