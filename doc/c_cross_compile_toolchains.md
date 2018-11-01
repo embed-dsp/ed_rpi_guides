@@ -75,31 +75,34 @@ FIXME: Elaborate ... [Downloads](https://www.linaro.org/downloads)
 
 Toolchain                                              | Host             | Default Target Options
 -------------------------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------
-gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf    | Linux x86 64-bit | `-mlittle-endian`, `-march=armv7-a` (32-bit), `-mtune=cortex-a9`, `-mthumb`, `-mfloat-abi=hard`, `-mfpu=vfpv3-d16`
-gcc-linaro-7.2.1-2017.11-x86_64_armv8l-linux-gnueabihf | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (32-bit), `-mtune=[default]`, `-mthumb`, `-mfloat-abi=hard`, `-mfpu=neon-fp-armv8`
-gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu      | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (64-bit), ...
+gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf    | Linux x86 64-bit | `-mlittle-endian`, `-march=armv7-a` (32-bit), `-mtune=cortex-a9`, `-mthumb`, `-mfloat-abi=hard`, `-mfpu=vfpv3-d16`
+gcc-linaro-7.3.1-2018.05-x86_64_armv8l-linux-gnueabihf | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (32-bit), `-mtune=[default]`, `-mthumb`, `-mfloat-abi=hard`, `-mfpu=neon-fp-armv8`
+gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu      | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (64-bit), ...
 
 ## Target Operating System: Bare Metal (Using [newlib](https://sourceware.org/newlib) ?)
 
 Toolchain                                   | Host             | Default Target Options
 --------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------
-gcc-linaro-7.2.1-2017.11-x86_64_arm-eabi    | Linux x86 64-bit | `-mlittle-endian`, `-march=armv2` (32-bit), `-mtune=[default]`, `-marm`, `-mthumb-interwork`, `-mfloat-abi=soft`, `-mfpu=vfp`
-gcc-linaro-7.2.1-2017.11-x86_64_aarch64-elf | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (64-bit)
+gcc-linaro-7.3.1-2018.05-x86_64_arm-eabi    | Linux x86 64-bit | `-mlittle-endian`, `-march=armv2` (32-bit), `-mtune=[default]`, `-marm`, `-mthumb-interwork`, `-mfloat-abi=soft`, `-mfpu=vfp`
+gcc-linaro-7.3.1-2018.05-x86_64_aarch64-elf | Linux x86 64-bit | `-mlittle-endian`, `-march=armv8-a` (64-bit)
 
 ## Installation
 
 ```bash
 # Create installation folder.
-mkdir -p /opt/linaro
+sudo mkdir -p /opt/linaro
+
+# Change the owner from root to <your name>
+sudo chown <your name>:<your name> /opt/linaro
 
 # Enter installation folder.
 cd /opt/linaro
 
 # Download.
-wget https://releases.linaro.org/components/toolchain/binaries/latest/arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+wget https://releases.linaro.org/components/toolchain/binaries/latest/arm-linux-gnueabihf/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf.tar.xz
 
 # Extract.
-tar xf gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+tar xf gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf.tar.xz
 ```
 
 
