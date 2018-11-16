@@ -233,6 +233,7 @@ sudo apt-get install scons
 
 ```bash
 # Terminal session recorder.
+sudo apt-get install python3-pkg-resources
 sudo apt-get install asciinema
 ```
 
