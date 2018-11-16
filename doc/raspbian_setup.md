@@ -231,6 +231,11 @@ sudo apt-get install cifs-utils
 sudo apt-get install scons
 ```
 
+```bash
+# Terminal session recorder.
+sudo apt-get install asciinema
+```
+
 
 # Enable more Bash aliases
 
