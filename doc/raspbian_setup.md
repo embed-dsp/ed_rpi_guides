@@ -167,32 +167,6 @@ The timezone settings are stored in the files:
 ```
 
 
-# apt Command Guide
-Here is a summary of some usefull `apt` commands.
-```bash
-# List all available packages.
-sudo apt-cache pkgnames
-
-# Search for a specific package.
-sudo apt-cache search <package-name>
-
-# Get information about a specific package.
-sudo apt-cache show <package-name>
-
-# Get information about a dependencies of a specific package.
-sudo apt-cache showpkg <package-name>
-
-# Resynchronize the package index files.
-sudo apt-get update
-
-# Install the newest versions of all packages.
-sudo apt-get upgrade
-
-# Install specific package.
-sudo apt-get install <package-name>
-```
-
-
 # Install extra Packages
 
 Install some extra packages that are useful while working on the Raspberry Pi:
@@ -282,46 +256,3 @@ Unmount samba share.
 # Unmount.
 sudo umount /mnt/samba
 ```
-
-
-# Enable Hardware Interfaces
-
-The following hardware interfaces can be accessed from *User Space* 
-after they have been enabled.
-
-## SPI
-
-Enable SPI interface:
-* `/dev/spidev0.0`
-* `/dev/spidev0.1`
-
-```bash
-sudo raspi-config
-```
-* Select: **5 Interfacing Options**
-    * Select: **P4 SPI**
-
-## I2C
-
-Enable I2C interface:
-* `/dev/i2c-1`
-
-```bash
-sudo raspi-config
-```
-* Select: **5 Interfacing Options**
-    * Select: **P5 I2C**
-
-## UART
-
-Enable UART interface:
-* `/dev/ttyS0`
-* `/dev/serial0 -> /dev/ttyS0`
-
-```bash
-sudo raspi-config
-```
-* Select: **5 Interfacing Options**
-    * Select: **P6 Serial**
-        * Select: **No login shell**
-        * Select: **Enable serial port hardware**
