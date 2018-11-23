@@ -188,6 +188,17 @@ sudo apt-get install emacs
 ```
 
 ```bash
+# Terminal multiplexer.
+sudo apt-get install tmux
+```
+
+```bash
+# Terminal session recorder.
+sudo apt-get install python3-pkg-resources
+sudo apt-get install asciinema
+```
+
+```bash
 # Audio utilities.
 sudo apt-get install sox
 sudo apt-get install flac
@@ -203,12 +214,6 @@ sudo apt-get install cifs-utils
 ```bash
 # Build tools.
 sudo apt-get install scons
-```
-
-```bash
-# Terminal session recorder.
-sudo apt-get install python3-pkg-resources
-sudo apt-get install asciinema
 ```
 
 
