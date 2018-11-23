@@ -212,7 +212,9 @@ sudo apt-get install asciinema
 ```
 
 
-# Enable more Bash aliases
+# Bash Customization
+
+## Enable more aliases
 
 Edit the `.bashrc` file:
 ```bash
@@ -224,6 +226,27 @@ and enable the following aliases (around line 90 in the `.bashrc` file)
 ```bash
 alias ll='ls -l'
 alias la='ls -A'
+```
+
+## Bash prompt & Terminal title
+
+Edit the `.bashrc` file:
+```bash
+vim /home/pi/.bashrc
+
+```
+
+Add the following at the end of the `.bashrc` file
+
+```sh
+# The primary prompt string.
+PS1="[\u@\h \W]\$ "
+```
+
+```sh
+# The command executed before the printing of each primary prompt and that we use
+# to set the title of the terminal window.
+PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"'
 ```
 
 
