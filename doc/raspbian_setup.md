@@ -242,16 +242,12 @@ vim /home/pi/.bashrc
 ```
 
 Add the following at the end of the `.bashrc` file
-
 ```sh
-# The primary prompt string.
-PS1="[\u@\h \W]\$ "
-```
+# The primary prompt string: No colors
+PS1="\[\e]0;\u@\h: \w\a\][\u@\h \W]\$ "
 
-```sh
-# The command executed before the printing of each primary prompt and that we use
-# to set the title of the terminal window.
-PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"'
+# The primary prompt string: Colors
+PS1="\[\e]0;\u@\h: \w\a\][\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]]\$ "
 ```
 
 
