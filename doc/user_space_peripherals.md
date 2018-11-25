@@ -1,11 +1,8 @@
 
-# User Space Peripherals
+# User-Space Peripherals
 
-The following hardware interfaces can be accessed from *User Space* 
-after they have been enabled.
-
-This document describes how the Raspberry Pi can be configured with the 
-`/boot/config.txt` file.
+The following hardware interfaces can be accessed from **User-Space** after
+they have been enabled by making propper changes to the `/boot/config.txt` file.
 
 
 # On-Board Audio
@@ -38,14 +35,6 @@ enable_uart=1
 # Disable
 enable_uart=0
 ```
-
-```sh
-sudo raspi-config
-```
-* Select: **5 Interfacing Options**
-    * Select: **P6 Serial**
-        * Select: **No login shell**
-        * Select: **Enable serial port hardware**
 
 ## Modules
 * `serdev`
@@ -81,17 +70,17 @@ dtparam=spi=off
 # SPI1
 
 ```sh
-# Enable ...
+# Enable SPI1 device with 1 slave-select.
 dtoverlay=spi1-1cs
 ```
 
 ```sh
-# Enable ...
+# Enable SPI1 device with 2 slave-selects.
 dtoverlay=spi1-2cs
 ```
 
 ```sh
-# Enable ...
+# Enable SPI1 device with 3 slave-selects.
 dtoverlay=spi1-3cs
 ```
 
