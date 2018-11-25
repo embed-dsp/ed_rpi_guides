@@ -10,6 +10,7 @@
 ## Development
 * [C/C++ Cross Compile Toolchains](doc/c_cross_compile_toolchains.md)
 * [Device Tree](doc/device_tree.md)
+* [vcgencmd](doc/vcgencmd.md)
 
 ## HATs / Capes / Shields
 * [Pimoroni pHAT DAC](doc/phat_dac.md)
