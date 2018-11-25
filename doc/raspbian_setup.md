@@ -241,11 +241,13 @@ vim /home/pi/.bashrc
 
 ```
 
-Add the following at the end of the `.bashrc` file
+Add one of the following at the end of the `.bashrc` file
 ```sh
 # The primary prompt string: No colors
 PS1="\[\e]0;\u@\h: \w\a\][\u@\h \W]\$ "
+```
 
+```sh
 # The primary prompt string: Colors
 PS1="\[\e]0;\u@\h: \w\a\][\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]]\$ "
 ```
